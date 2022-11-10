@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kiona Calzados</title>
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+
+    <!-- my styles -->
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <img src="../imagenes/logokiona.png" alt="" width="50%" />
+        </div>
+      </div>
+      <nav>
+        <div>
+          <ul class="nav_link">
+            <li><a class="nav_link" href="../index.html">Inicio</a></li>
+            <li>
+              <a class="nav_link" href="../paginas/catalogo.html">Catalogo</a>
+            </li>
+            <li>
+              <a class="nav_link" href="../paginas/form.html">Formulario</a>
+            </li>
+            <li>
+              <a class="nav_link" href="../paginas/quienes.html">
+                Quienes somos</a
+              >
+            </li>
+            <li>
+              <a class="nav_link" href="../paginas/guia.html">
+                Guia de talles</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1>Formulario</h1>
+
+    <form action="">
+      <fieldset>
+        <legend>Contactenos</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+        <br />
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" />
+        <br />
+        hombre
+        <input type="radio" name="sexo" id="sexo" />
+        mujer
+        <input type="radio" name="sexo" id="mujer" />
+        <br />
+        <label for="talles">Talles:</label>
+        <select name="talles" id="talles">
+          <option value="L">Large</option>
+          <option value="M">Medium</option>
+          <option value="XL">XL</option>
+        </select>
+        <br />
+        <label for="mensaje">Mensaje:</label>
+        <br />
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar todo" />
+        <br />
+        <div>Seleccion de colores</div>
+        <label for="colores">Azul</label>
+        <input type="checkbox" name="colores" id="colores" />
+        <br />
+        <label for="colores">Rojo</label>
+        <input type="checkbox" name="colores" id="colores" />
+        <br />
+        <label for="colores">Verde</label>
+        <input type="checkbox" name="colores" id="colores" />
+        <br />
+      </fieldset>
+    </form>
+    <footer>
+      <div class="container">
+        <div>Buscanos en las redes</div>
+        <img width="10%" src="../imagenes/fb.png" alt="" />
+        <img width="10%" src="../imagenes/ig.png" alt="" />
+        <img width="10%" src="../imagenes/whatsapp.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
