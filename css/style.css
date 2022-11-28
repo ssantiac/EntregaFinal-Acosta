@@ -164,7 +164,7 @@ input[type="submit"]:hover {
   }
 }
 
-@keyframes .img-logo {
+@keyframes img-logo {
   0% {
     opacity: 0;
     transform: translate(80px);
@@ -176,6 +176,6 @@ input[type="submit"]:hover {
   }
 }
 
-.img-logo {
-  animation: .img-logo 1.5s ease;
+img-logo {
+  animation: img-logo 1.5s ease;
 }

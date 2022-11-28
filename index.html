@@ -19,13 +19,6 @@
       rel="stylesheet"
     />
 
-    <!--ANIMACIONES-->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-
     <!-- ICONOS BS-->
 
     <link
@@ -35,13 +28,24 @@
 
     <!--MY CSS-->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!--ANIMACIONES-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- LOGO -->
     <header>
       <div class="container-my">
         <div class="text-center">
-          <img src="imagenes/logokiona.png" class=".img-logo" alt="" />
+          <img
+            src="imagenes/logokiona.png"
+            class="animate__animated animate__fadeInDown"
+            alt=""
+          />
         </div>
       </div>
 
@@ -98,26 +102,27 @@
       </nav>
     </header>
 
-    <!-- WAVE PROVISORIA -->
-    <!--svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <!-- WAVE -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#fffdf4"
         fill-opacity="1"
         d="M0,256L60,250.7C120,245,240,235,360,202.7C480,171,600,117,720,122.7C840,128,960,192,1080,181.3C1200,171,1320,85,1380,42.7L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
       ></path>
-    </!--svg>
+    </svg>
 
-
-<!--  h2   -->
+    <!--  h2   -->
     <div class="text-center">
       <div class="blockquote">
-        <h2>Kiona fábrica de calzados y accesorios</h2>
+        <h2 class="animate__animated animate__bounceIn">
+          Kiona fábrica de calzados y accesorios
+        </h2>
       </div>
     </div>
 
     <!--CARROUSELL -->
 
-    <div class="container-md">
+    <div class="container-md animate__animated animate__fadeIn">
       <div class="carousel slide" id="slider" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
