@@ -18,42 +18,26 @@ img {
   margin-left: 50px;
 }
 
-h1 {
-  color: red;
-}
-.container {
+.container-my {
+  display: flex;
   width: 50%;
   margin: 0 auto;
   max-width: 1320px;
   justify-content: center;
 }
 
-.inicio {
-  max-width: 115rem;
-  margin: 0 auto;
-}
-
-.postuno {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 2rem;
-  height: auto;
-  max-width: 100%;
-}
-
-.wave {
-  z-index: -1;
-}
 .imagencentro {
   width: 50%;
   position: absolute right 5%;
 }
 
 .guiatalles {
-  padding: 2rem;
-  margin: 2rem;
   box-shadow: 0 10px 30px -10px coral;
+}
+
+.imagentalles {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 body {
@@ -75,10 +59,6 @@ body {
   font-weight: bold;
 }
 
-.nav_link:hover {
-  opacity: 0, 65;
-}
-
 footer {
   background-color: black;
   color: white;
@@ -89,9 +69,6 @@ footer {
   display: flex;
 }
 
-.maincentro {
-  display: flex;
-}
 section {
   display: flex;
   justify-content: center;
@@ -123,47 +100,82 @@ article button {
   cursor: pointer;
 }
 
-.catalogo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
 }
-.div3 {
-  grid-area: 1 / 3 / 2 / 4;
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
-.div4 {
-  grid-area: 2 / 1 / 3 / 2;
+
+.formbg {
+  border-radius: 5px;
+  background-color: #c2c2c2;
+  padding: 20px;
 }
-.div5 {
-  grid-area: 2 / 2 / 3 / 3;
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
-.div6 {
-  grid-area: 2 / 3 / 3 / 4;
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
 }
-.div7 {
-  grid-area: 3 / 1 / 4 / 2;
+
+.row:after {
+  content: icon;
+  display: table;
+  clear: both;
 }
-.div8 {
-  grid-area: 3 / 2 / 4 / 3;
+
+@media screen and (max-width: 600px) .col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
 }
-.div9 {
-  grid-area: 3 / 3 / 4 / 4;
+
+@media (min-width: 992px) {
+  .alto {
+    height: 100vh;
+  }
 }
-.div10 {
-  grid-area: 4 / 1 / 5 / 2;
+
+@keyframes .img-logo {
+  0% {
+    opacity: 0;
+    transform: translate(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
 }
-.div11 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-.div12 {
-  grid-area: 4 / 3 / 5 / 4;
+
+.img-logo {
+  animation: .img-logo 1.5s ease;
 }
