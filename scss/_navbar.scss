@@ -1,0 +1,17 @@
+.nav_link {
+  display: flex;
+  margin: 20px;
+  color: #343352;
+  align-items: left;
+  justify-content: flex-start;
+  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

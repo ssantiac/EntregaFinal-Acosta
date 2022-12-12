@@ -1,0 +1,20 @@
+{
+  "name": "kiona",
+  "version": "1.0.0",
+  "description": "Kion calzados, fabrica de calzado femenino industria Argentina",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssantiac/kionacalzados.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssantiac/kionacalzados/issues"
+  },
+  "homepage": "https://github.com/ssantiac/kionacalzados#readme"
+}
