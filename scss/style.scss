@@ -12,9 +12,7 @@
   h1 {
     font-size: 1.5em;
   }
-  h2 {
-    font-size: 1.2em;
-  }
+
   h3 {
     font-size: 1em;
   }
@@ -23,8 +21,15 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Oxygen", sans-serif;
-  padding: 1rem;
+  background-color: #fefdfa;
 }
+
+.background_body {
+  background-image: url(../imagenes/bg.png);
+
+  background-size: cover;
+}
+
 .nav_link {
   display: flex;
   margin: 20px;
@@ -40,31 +45,45 @@ img {
   max-width: 100%;
 }
 
+.footer_link {
+  text-decoration: none;
+}
+
 .container-my {
   margin: auto;
 
   justify-content: center;
 }
 
-.guiatalles {
-  width: 100%;
-  box-shadow: 0 10px 30px -10px coral;
-}
-
 .imagentalles {
-  padding-top: 10%;
-  padding-bottom: 10%;
   border-radius: 36px;
   box-shadow: -1px 2px 24px 0px rgba(0, 0, 0, 0.75);
 }
 footer {
   background-color: #000000;
   color: white;
+  padding: 20px;
+  margin-top: 20px;
+
+  bottom: 0;
+  width: 100%;
 }
+
+.footer_guia {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+}
+
 header {
   background-color: #fffdf4;
   padding: 20px;
-  margin: 20px;
+
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
@@ -132,6 +151,11 @@ input[type="submit"]:hover {
   margin-top: 6px;
 }
 
+.subtitle {
+  margin: 10px;
+  padding: 20px;
+}
+
 .row:after {
   content: icon;
   display: table;
@@ -167,4 +191,34 @@ input[type="submit"]:hover {
 
 img-logo {
   animation: img-logo 1.5s ease;
+}
+
+.cajatalles {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 19px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.div4 {
+  grid-area: 1 / 4 / 2 / 5;
 }
