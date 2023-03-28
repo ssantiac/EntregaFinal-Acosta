@@ -1,29 +1,44 @@
 //array de botones
 //globales
-const addToShoppingCartButtons = document.querySelectorAll(".addToCart");
-addToShoppingCartButtons.forEach((addToCartButton) => {
-  addToCartButton.addEventListener("click", addToCartClicked);
+const agregarAlCarrito = document.querySelectorAll(".addToCart");
+agregarAlCarrito.forEach((agregarAlCarritoBoton) => {
+  agregarAlCarritoBoton.addEventListener("click", addToCartClicked);
 });
-//boton de compra
-const comprarButton = document.querySelector(".comprarButton");
-comprarButton.addEventListener("click", comprarButtonClicked);
+const botonCaja = document.querySelector("#botonCaja");
 
 const shoppingCartItemsContainer = document.querySelector(
   ".shoppingCartItemsContainer"
 );
-//funciones de click
+//let agregarAlCarrito = JSON.parse(localStorage.getItem("agregarAlCarrito"));
+
+//local storage
+
+const saveLocal = () => {
+  localStorage.setItem("agregarAlCarrito", JSON.stringify(agregarAlCarrito));
+};
+
+//añadir items al carrito
 function addToCartClicked(event) {
   const button = event.target;
   const item = button.closest(".item");
-
   const itemTitle = item.querySelector(".item-title").textContent;
   const itemPrice = item.querySelector(".item-price").textContent;
   const itemImage = item.querySelector(".item-image").src;
 
-  //añadir items al carrito
-
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
+  saveLocal();
 }
+//toastify libreria
+
+botonCaja.addEventListener("click", () => {
+  Toastify({
+    text: "Producto agregado",
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+    duration: 1600,
+  }).showToast();
+});
 
 function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(

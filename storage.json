@@ -1,0 +1,41 @@
+{
+  "producto": [
+    {
+      "id": 1,
+      "nombre": "Sandalia plataforma",
+      "precio": 2000,
+      "img": "img/cat5"
+    }
+    {
+      "id": 2,
+      "nombre": "Sandalia glitter plata",
+      "precio": 3000,
+      "img": "img/cat4"
+    }
+    {
+      "id": 3,
+      "nombre": "Sandalia con cadena",
+      "precio": 5000,
+      "img": "img/cat3"
+    }
+    {
+      "id": 4,
+      "nombre": "Sandalia con cadena",
+      "precio": 3200,
+      "img": "img/cat2"
+    }
+    {
+      "id": 5,
+      "nombre": "Gomon",
+      "precio": 6000,
+      "img": "img/cat1"
+    }
+    {
+      "id": 6,
+      "nombre": "Sandalia glitter",
+      "precio": 4400,
+      "img": "img/cat"
+    }
+  ]
+  
+}
